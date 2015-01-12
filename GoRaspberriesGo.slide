@@ -1,0 +1,398 @@
+Go Raspberries, Go
+
+2015/01/08
+Esteve Farrés Berenguer
+Baby Gopher, for the moment.
+
+R&D Manager, Ubikwa Systems SLU
+http://ubikwa.com
+efarres@ubikwa.com
+
+https://plus.google.com/u/0/+EsteveFarresBerenguer
+esteve.farres@gmail.com
+@estfarr
+
+* Ready?
+.image image/gopherswim.jpg _ 200
+.image image/Raspberry_Pi_Logo.png
+.image image/Raspberry_Pi_B+_top.jpg 
+
+* Raspberry Pi
+The Raspberry Pi is based on the Broadcom BCM2835 system on a chip (SoC):
+
+- CPU: ARM1176JZF-S (ARMv6 instruction set) @700 MHz 
+- GPU: Broadcom VideoCore IV GPU @250MHz
+
+* Raspberry Pi - Peripherals
+[[http://elinux.org/RPi_Low-level_peripherals#General_Purpose_Input.2FOutput_.28GPIO.29][elinux.org - RPi Low-level Peripherals]]
+
+.image image/GPIOs.png _ 200
+
+
+* Raspberry Pi - Installing Go:
+[[http://dave.cheney.net/unofficial-arm-tarballs][Dave Cheney - Unofficial ARM tarballs for Go]]
+
+	"Raspberry Pi (ARMv6 Multiarch) Debian based system (Raspbian)."
+
+Useful Tools:
+
+- [[http://elinux.org/RPi_Guides][RPi Guides ]]
+- [[http://www.raspberry-projects.com/pi/programming-in-c/getting-your-raspberry-pi-ready-for-c-programming][Getting Your RPi Ready For C Programming]]
+
+
+* Go (golang.org)
+
+* What is Go?
+
+A new programming language. (First release in November 2009, 1.0 in March 2012.)
+
+In a nutshell:
+
+- A simple language that is easy to learn and read.
+- Statically typed, but with a dynamic feel.
+- Compiled to native machine code, but has a fast development cycle.
+- Language-level concurrency features.
+- Expansive "batteries included" standard library.
+- Great tools.
+- Open source.
+
+
+* What is Go used for?
+
+Go is a general-purpose programming language, like Python, Java, or C.
+
+Some common uses:
+
+- Server daemons
+- Command-line tools
+- Web applications
+- Games
+- Scientific computing
+- High frequency trading
+
+And, of course, there are many more.
+
+* Go Projects
+
+[[http://blog.labix.org/2014/08/13/announcing-qml-v1-for-go][QML support - Canonical]]
+More from Gustavo Niemeyer, Canonical's JuJu infrastructure automation system was rewritten in Go
+
+.image image/docker-logo-loggedout.png _ 200
+	"Docker is a tool for packaging and running applications in lightweight containers."
+
+* Go - Gopher Gala
+The [[http://gophergala.com/][Gopher Gala]] is the first Go hackathon at a global scale and will take place from January 23rd through the 25th.
+
+.image image/fancygopher.jpg _ 200
+
+* Go and me
+
+I start learning Go in 02/2013 (Go 1.1 2013/05/03). 
+
+Initial description
+
+	"Go a systems programming language expressive, concurrent, garbage-collected."
+
+I'm PhD. in Physics, and electronic. I develop scientific instrumentation. 
+I'm not a software engineer, but as I have been involved also in several software projects. My first computer was a Commodore VIC-20 computer 16K RAM Cartridge.
+
+.image image/CBMVIC20P8.jpg _ 200
+
+I'm writing code for data processing and analysis.
+
+* a bit more
+I'm interested in concurrency and Communicating Sequential Processes (CSP described 1978).
+Hardware description language VHDL, also in other native concurrent languages as Occam (1983), or Ada (1980, implementation 1983).
+
+Python had been my language for data manipulation and exploration (SciPy, Pylab).
+
+Some unreasonable phobia to C, and derivatives as Verilog.
+
+My current personal challenge is break the gap between hard and soft domains.
+
+Go and VHDL are my day-to-day languages.
+
+[[http://golang.org/cmd/go/][Command go]]
+
+* Last realise 
+
+[[https://blog.golang.org/go1.4][go1.4]]
+
+- Date: 10 December 2014
+- Back compatibility.
+- Official support for Android.
+- Source control from Mercurial to Git
+
+
+* Go is 
+
+Multiplatform, nice to see the code running in different platforms:
+
+- x86 (32/64bit), ARM (32bit) 
+- Windows, Linux, BSD, OS X, ...
+
+NO dependences.
+
+Compiled 
+Accept C and assembly files
+
+Statically typed language.
+Garbage-collected.
+
+* Concurrency
+Language feature (related with [[https://en.wikipedia.org/wiki/Tony_Hoare][Hoare's]] CSP 1978).
+[[http://golang.org/doc/effective_go.html#goroutines][Goroutines]] (Execution).
+[[http://golang.org/doc/effective_go.html#channels][Channels]] (Communication and synchronization).
+
+[[http://golang.org/doc/effective_go.html#interfaces][Interfaces]] (Polymorphism).
+
+[[http://talks.golang.org/2012/waza.slide#1][Concurrency is not Parallelism]]
+[[http://talks.golang.org/2012/concurrency.slide#1][Go Concurrency Patterns]]
+[[http://talks.golang.org/2013/advconc.slide#1][Advanced Go Concurrency Patterns]]
+
+
+* Integrated Tools
+Formatting of source code.
+
+	gofmt
+
+Code documentation:
+
+	godoc
+
+Download and install packages:
+
+	go get
+
+* Integrated Tools
+Compile and link packages:
+
+	go build
+
+Compile and run program:
+
+	go run
+
+Test, profiling, and performance:
+
+	go test
+
+New, Generate
+
+	go generate
+
+[[http://golang.org/cmd/go/][Command go]]
+[[https://golang.org/doc/cmd][Command Documentation]]
+
+* Ubikwa Systems
+.image image/LogoUbikwaBN.png _ 150
+Ubiquitous Computing - Internet of Things
+
+Ubikwa Systems is an start-up company located at the Technological and Scientific Park of the University of Girona.
+
+	"Our principal market and focus of interest is precision farming."
+
+Others Smart Cities and Unnamed Aerial Vehicles.
+
+* Building Instruments and Services
+We need:
+
+- Efficiency
+- Safety
+- Concurrency
+- Scalability
+- Fast development cycle
+
+
+
+* Base42 HackerSpace
+
+.image image/base42_110px.png
+
+- Març de 2013
+- [[http://fadefestival.tumblr.com/][FADE]] Festival d'Art Digital i Electrònica de la Cellera
+- Impressora 3D
+- Drons
+
+* Base42 - Open Hardware
+
+.image image/Ohw-logo.svg.png _ 150
+
+- Hands-on
+- Low level makers
+- Technological support
+
+* Is possible build an embedded system with Go?
+
+- Is possible manage bus interfaces? 
+	SPI, I2C, I2S, UART common sensor interfaces
+- Is possible take profit of the hardware features?
+	Speed, power budget.
+- Is possible re-use C libraries?
+	C/C++ Bridges
+- Is possible run in an embedded system?
+	Raspberry Pi as fast prototyping
+
+* Is possible build an embedded system with Go?
+
+- Is possible manage communications?
+	WiFi, Ethernet, UART
+- Is possible deploy web services?
+	native net/http package
+- Is possible build RESTfull APIs?
+	go-json-rest package
+	
+
+* Gobot.io 
+
+- Golang Powered Robotics
+
+.image image/GoRaspberriesLarge.png 200 _
+
+	"Gobot is a framework for robotics, physical computing, and the Internet of Things, 
+	written in the Go programming language."
+
+Include a RESTful API
+
+* Gobot Platforms
+
+.image image/Gobot_platforms.png 300 _
+
+Firmata protocol => Arduino support
+Linux, and Go => Beaglebone Black, Intel Edison, Raspberry Pi, ... 
+
+
+* cgo - C "Pseudo-package"
+Cgo lets Go packages call C code.
+Go and C files that can be combined into a single Go package.
+[[http://blog.golang.org/c-go-cgo][C? Go? Cgo!]]
+
+.code random/random.go
+
+
+* Taking hardware control - BCM2835
+Great C library, very well documented. 
+[[http://www.airspayce.com/mikem/bcm2835]]
+
+	// bcm2835.h
+	//
+	// C and C++ support for Broadcom BCM 2835 as used in Raspberry Pi
+	//
+	// Author: Mike McCauley
+
+It provides access to GPIO and other IO functions on the Broadcom BCM 2835 chip.
+It provides functions for reading digital inputs and setting digital outputs, using SPI and I2C, and for accessing the system timers.
+Pin event detection is supported by polling (interrupts are not supported).
+
+* BCM2835 bridge implementation
+
+Presentation and code available at Github
+[[https://github.com/efarres/GoRaspberry][Go and Raspberries, GDG Barcelona Event - 2014/11/12]]
+
+
+* Packages
+
+* Go code lives in packages.
+
+Packages contain type, function, variable, and constant declarations.
+
+	import (
+		// Standard library
+		"fmt"
+		"strconv"          // conversions to and from string representations of basic data types.
+		"time"             // provides functionality for measuring and displaying time.
+		"log"              // a simple logging package.
+		"net/http"         // provides HTTP client and server implementations.
+		"html/template"    // implements data-driven templates for generating HTML output safe.
+		"image/color"      // implements a basic color library.
+		// Go Libraries
+		"code.google.com/p/plotinum/plot"        // provides simple interface for laying out a plot   
+		"code.google.com/p/plotinum/plotter"     // provides a standard set of 'Plotters'
+		"code.google.com/p/plotinum/vg"          // provides a generic vector graphics API
+		"github.com/gorilla/Schema"              // fills a struct with form values.
+		// Ubikwa System Library
+		"dummy/ubiTC64P"                         // Sensor bridge
+	)
+
+* Applications and Services
+
+* Web Server
+
+	func main() {
+		// Enable ubiTC64P interface
+		enable := ubiTC64P.Enable()
+		if enable != 0 {
+			fmt.Println("ubiTC64P not available")
+			return
+		}
+		// Download the firmware
+		ubiTC64P.Download()
+		// defer ubiTC64P SPI interface
+		defer ubiTC64P.Close()
+		// Register the handler for the given pattern
+		http.Handle("/map/", http.HandlerFunc(GetMap))
+		http.Handle("/setup/", http.HandlerFunc(PostSetup))
+		http.Handle("/set/", http.HandlerFunc(SetSetup))
+		http.Handle("/", http.FileServer(http.Dir("./static")))
+		// Console feedback
+		fmt.Printf("ubiTC64P Web Server Ready")
+		// Start Server
+		http.ListenAndServe(":6060", nil)
+	}
+
+* RESTful Service
+
+	func main() {
+		// Start REST 
+		handler := rest.ResourceHandler{
+			EnableRelaxedContentType: true,
+		}
+		// Register the handler for the given pattern
+		handler.SetRoutes(
+			&rest.Route{"GET", "/raw", GetRawData},
+			&rest.Route{"GET", "/distance", GetDistance},
+			&rest.Route{"GET", "/temperature", GetTemperature},
+			&rest.Route{"GET", "/quality", GetQuality},
+			&rest.Route{"POST", "/setup", PostSetup},
+		)
+		// Console feedback
+		fmt.Println("ubiTC64PREST Server Ready")
+		// Start Service
+		http.ListenAndServe(":8080", &handler)
+	}
+
+* Demo
+
+* Application stack
+Two possible approaches:
+
+	- Go Application       Go Application     // Go application layer
+	- Go data handler      Go data handler    // Go data handler
+	- Go Bus bridge        Go data bridge     // C to Go Interface
+	-                      C data handler     // Sensor information handler
+	- C Bus Interface      C Bus Interface    // Hardware features management
+	- SPI sensor           SPI sensor         // The sensor
+
+* Expected Web Server
+
+.image image/ubiWebServerCapture.PNG _ 400
+
+
+* Expected RESTful
+
+.image image/LogoUbikwaBN.png _ 50
+.image image/ubiRESTfulCapture.PNG _ 800
+
+
+* References
+Programmers
+[[http://talks.golang.org/2012/goforc.slide#1][Go for C programmers]]
+[[http://talks.golang.org/2013/go4python.slide][Go for Pythonistas]]
+[[http://talks.golang.org/2014/go4java.slide][Go for Javaneros (Javaïstes?).]]
+[[http://talks.golang.org/2014/go4gophers.slide][Go for gophers.]]
+
+Documentation
+[[http://blog.golang.org/godoc-documenting-go-code][Gocode: documenting Go code]]
+
+Code
+[[https://drive.google.com/folderview?id=0B3JCCmjUE6SiQWo2Mk82T2FhWUk&usp=sharing][Go Raspberry Pi]]
